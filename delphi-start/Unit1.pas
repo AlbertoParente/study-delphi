@@ -14,7 +14,8 @@ type
     { Private declarations }
   public
     { Public declarations }
-	{ Test Commit }
+	{ Test Commit 1 }
+	{ Test Commit 2 }
   end;
 
 var
