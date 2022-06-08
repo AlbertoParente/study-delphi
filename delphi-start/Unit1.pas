@@ -55,4 +55,26 @@ begin
   Result := edName.Text;
 end;
 
+{
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  i := 1;
+  c := 1.1;
+  f := 5.43;
+  r := 6.543;
+  //s := edName.Text;
+  b := true;
+  ShowVariable(s);
+end;
+
+procedure TForm1.ShowVariable(Value: string);
+begin
+  ShowMessage(Value);
+end;
+
+function TForm1.showText;
+begin
+  Result := edName.Text;
+end;
+}
 end.
