@@ -14,7 +14,13 @@ type
     edValue2: TEdit;
     Label1: TLabel;
     edResult: TEdit;
-    Button2: TButton;
+    btnSum: TButton;
+    btnSub: TButton;
+    btnMult: TButton;
+    btnDiv: TButton;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
     procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
