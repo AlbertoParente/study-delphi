@@ -21,6 +21,17 @@ type
     Label2: TLabel;
     Label3: TLabel;
     Label4: TLabel;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    Button5: TButton;
+    Button6: TButton;
+    Button7: TButton;
+    Button8: TButton;
+    Button9: TButton;
+    Button10: TButton;
+    Button12: TButton;
+    Button13: TButton;
     procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
