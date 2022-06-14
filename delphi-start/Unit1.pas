@@ -17,82 +17,32 @@ type
     Label3: TLabel;
     Label4: TLabel;
     btnSum: TButton;
-    procedure Button1Click(Sender: TObject);
+    procedure btnSumClick(Sender: TObject);
   private
     { Private declarations }
-    i: integer;
-    c: currency;
-    f: double;
-    r: real;
-    s: string;
-    b: boolean;
-    Date : TDateTime;
-
-    procedure ShowVariable(Value: Integer);
-    function showText: string;
     function sum(value1, value2 : Integer) : Integer;
   public
     { Public declarations }
-
   end;
 
 var
   Form1: TForm1;
-  Global : String;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm1.Button1Click(Sender: TObject);
+procedure TForm1.btnSumClick(Sender: TObject);
+var Result : Integer;
+
 begin
-  i := 1;
-  c := 1.1;
-  f := 5.43;
-  r := 6.543;
-  // s := edName.Text;
-  b := true;
-
-
-  Global := showText;
-  ShowVariable(StrToInt(showText));
+  Result := sum(StrToInt(edValue1.Text), StrToInt(edValue2.Text));
+  edResult.Text := IntToStr(Result);
 end;
 
-procedure TForm1.ShowVariable(Value: Integer);
+function TForm1.sum(value1: Integer; value2: Integer): Integer;
 begin
-  ShowMessage(IntToStr(value));
+  Result := value1 + value2;
 end;
 
-function TForm1.sum(value1, value2: Integer): Integer;
-begin
-
-end;
-
-function TForm1.showText;
-begin
-  Result := edName.Text;
-end;
-
-{
-procedure TForm1.Button1Click(Sender: TObject);
-begin
-  i := 1;
-  c := 1.1;
-  f := 5.43;
-  r := 6.543;
-  //s := edName.Text;
-  b := true;
-  ShowVariable(s);
-end;
-
-procedure TForm1.ShowVariable(Value: string);
-begin
-  ShowMessage(Value);
-end;
-
-function TForm1.showText;
-begin
-  Result := edName.Text;
-end;
-}
 end.

@@ -71,5 +71,6 @@ object Form1: TForm1
     Height = 25
     Caption = '+'
     TabOrder = 3
+    OnClick = btnSumClick
   end
 end
