@@ -17,11 +17,22 @@ type
     Label3: TLabel;
     Label4: TLabel;
     btnSum: TButton;
+    btnSub: TButton;
+    btnMult: TButton;
+    btnDivdReal: TButton;
+    btnDivd: TButton;
     procedure btnSumClick(Sender: TObject);
+    procedure btnDivdClick(Sender: TObject);
+    procedure btnSubClick(Sender: TObject);
+    procedure btnMultClick(Sender: TObject);
+    procedure btnDivdRealClick(Sender: TObject);
   private
     { Private declarations }
     function sum(value1, value2 : Integer) : Integer;
-  public
+    Function sub(value1, value2 : Integer) : Integer;
+    Function mult(value1, value2 : Integer) : Integer;
+    function divd(value1, value2: Integer): Integer;
+    function divdReal(value1, value2: Currency): Currency;public
     { Public declarations }
   end;
 
@@ -32,12 +43,66 @@ implementation
 
 {$R *.dfm}
 
+procedure TForm1.btnDivdRealClick(Sender: TObject);
+var Result : Integer;
+
+begin
+  Result := divdReal(StrToInt(edValue1.Text), StrToInt(edValue2.Text));
+  edResult.Text := IntToStr(Result);
+end;
+
+procedure TForm1.btnMultClick(Sender: TObject);
+var Result : Integer;
+
+begin
+  Result := mult(StrToInt(edValue1.Text), StrToInt(edValue2.Text));
+  edResult.Text := IntToStr(Result);
+end;
+
+procedure TForm1.btnSubClick(Sender: TObject);
+var Result : Integer;
+
+begin
+  Result := sub(StrToInt(edValue1.Text), StrToInt(edValue2.Text));
+  edResult.Text := IntToStr(Result);
+
+end;
+
 procedure TForm1.btnSumClick(Sender: TObject);
 var Result : Integer;
 
 begin
   Result := sum(StrToInt(edValue1.Text), StrToInt(edValue2.Text));
   edResult.Text := IntToStr(Result);
+end;
+
+procedure TForm1.btnDivdClick(Sender: TObject);
+var Result : Integer;
+
+begin
+  Result := divd(StrToInt(edValue1.Text), StrToInt(edValue2.Text));
+  edResult.Text := IntToStr(Result);
+
+end;
+
+function TForm1.divd(value1, value2: Integer): Integer;
+begin
+  Result := value1 div value2;
+end;
+
+function TForm1.divdReal(value1, value2: Currency): Currency;
+begin
+  Result := value1 / value2;
+end;
+
+function TForm1.mult(value1, value2: Integer): Integer;
+begin
+  Result := value1 * value2;
+end;
+
+function TForm1.sub(value1, value2: Integer): Integer;
+begin
+  Result := value1 - value2;
 end;
 
 function TForm1.sum(value1: Integer; value2: Integer): Integer;

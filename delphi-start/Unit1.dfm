@@ -73,4 +73,40 @@ object Form1: TForm1
     TabOrder = 3
     OnClick = btnSumClick
   end
+  object btnSub: TButton
+    Left = 56
+    Top = 112
+    Width = 41
+    Height = 25
+    Caption = '-'
+    TabOrder = 4
+    OnClick = btnSubClick
+  end
+  object btnMult: TButton
+    Left = 103
+    Top = 111
+    Width = 42
+    Height = 25
+    Caption = '*'
+    TabOrder = 5
+    OnClick = btnMultClick
+  end
+  object btnDivdReal: TButton
+    Left = 151
+    Top = 111
+    Width = 41
+    Height = 25
+    Caption = '/'
+    TabOrder = 6
+    OnClick = btnDivdRealClick
+  end
+  object btnDivd: TButton
+    Left = 198
+    Top = 111
+    Width = 51
+    Height = 25
+    Caption = 'div'
+    TabOrder = 7
+    OnClick = btnDivdClick
+  end
 end
