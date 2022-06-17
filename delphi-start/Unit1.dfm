@@ -109,4 +109,13 @@ object Form1: TForm1
     TabOrder = 7
     OnClick = btnDivdClick
   end
+  object btnMod: TButton
+    Left = 255
+    Top = 111
+    Width = 50
+    Height = 25
+    Caption = 'mod'
+    TabOrder = 8
+    OnClick = btnModClick
+  end
 end

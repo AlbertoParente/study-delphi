@@ -21,18 +21,22 @@ type
     btnMult: TButton;
     btnDivdReal: TButton;
     btnDivd: TButton;
+    btnMod: TButton;
     procedure btnSumClick(Sender: TObject);
     procedure btnDivdClick(Sender: TObject);
     procedure btnSubClick(Sender: TObject);
     procedure btnMultClick(Sender: TObject);
     procedure btnDivdRealClick(Sender: TObject);
+    procedure btnModClick(Sender: TObject);
   private
     { Private declarations }
     function sum(value1, value2 : Integer) : Integer;
     Function sub(value1, value2 : Integer) : Integer;
     Function mult(value1, value2 : Integer) : Integer;
     function divd(value1, value2: Integer): Integer;
-    function divdReal(value1, value2: Currency): Currency;public
+    function divdReal(value1, value2: Currency): Currency;
+    function modd(value1, value2: Integer): Integer;
+  public
     { Public declarations }
   end;
 
@@ -44,11 +48,20 @@ implementation
 {$R *.dfm}
 
 procedure TForm1.btnDivdRealClick(Sender: TObject);
+var Result : Currency;
+
+begin
+  Result := divdReal(StrToCurr(edValue1.Text), StrToCurr(edValue2.Text));
+  edResult.Text := CurrToStr(Result);
+end;
+
+procedure TForm1.btnModClick(Sender: TObject);
 var Result : Integer;
 
 begin
-  Result := divdReal(StrToInt(edValue1.Text), StrToInt(edValue2.Text));
+  Result := modd(StrToInt(edValue1.Text), StrToInt(edValue2.Text));
   edResult.Text := IntToStr(Result);
+
 end;
 
 procedure TForm1.btnMultClick(Sender: TObject);
@@ -93,6 +106,11 @@ end;
 function TForm1.divdReal(value1, value2: Currency): Currency;
 begin
   Result := value1 / value2;
+end;
+
+function TForm1.modd(value1, value2: Integer): Integer;
+begin
+  Result := value1 mod value2;
 end;
 
 function TForm1.mult(value1, value2: Integer): Integer;
