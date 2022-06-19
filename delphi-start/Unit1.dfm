@@ -43,6 +43,13 @@ object Form1: TForm1
     Caption = 'Resultado'
     Layout = tlCenter
   end
+  object Label5: TLabel
+    Left = 128
+    Top = 110
+    Width = 57
+    Height = 13
+    Caption = 'Operadores'
+  end
   object edValue1: TEdit
     Left = 14
     Top = 27
@@ -65,17 +72,17 @@ object Form1: TForm1
     TabOrder = 2
   end
   object btnSum: TButton
-    Left = 8
-    Top = 111
-    Width = 49
+    Left = 112
+    Top = 191
+    Width = 44
     Height = 25
     Caption = '+'
     TabOrder = 3
     OnClick = btnSumClick
   end
   object btnSub: TButton
-    Left = 56
-    Top = 112
+    Left = 167
+    Top = 191
     Width = 41
     Height = 25
     Caption = '-'
@@ -83,36 +90,36 @@ object Form1: TForm1
     OnClick = btnSubClick
   end
   object btnMult: TButton
-    Left = 103
-    Top = 111
-    Width = 42
+    Left = 167
+    Top = 160
+    Width = 41
     Height = 25
     Caption = '*'
     TabOrder = 5
     OnClick = btnMultClick
   end
   object btnDivdReal: TButton
-    Left = 151
-    Top = 111
-    Width = 41
+    Left = 112
+    Top = 160
+    Width = 44
     Height = 25
     Caption = '/'
     TabOrder = 6
     OnClick = btnDivdRealClick
   end
   object btnDivd: TButton
-    Left = 198
-    Top = 111
-    Width = 51
+    Left = 112
+    Top = 129
+    Width = 44
     Height = 25
     Caption = 'div'
     TabOrder = 7
     OnClick = btnDivdClick
   end
   object btnMod: TButton
-    Left = 255
-    Top = 111
-    Width = 50
+    Left = 167
+    Top = 129
+    Width = 41
     Height = 25
     Caption = 'mod'
     TabOrder = 8

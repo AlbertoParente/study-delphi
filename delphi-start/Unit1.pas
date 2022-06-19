@@ -22,6 +22,7 @@ type
     btnDivdReal: TButton;
     btnDivd: TButton;
     btnMod: TButton;
+    Label5: TLabel;
     procedure btnSumClick(Sender: TObject);
     procedure btnDivdClick(Sender: TObject);
     procedure btnSubClick(Sender: TObject);
@@ -30,9 +31,9 @@ type
     procedure btnModClick(Sender: TObject);
   private
     { Private declarations }
-    function sum(value1, value2 : Integer) : Integer;
-    Function sub(value1, value2 : Integer) : Integer;
-    Function mult(value1, value2 : Integer) : Integer;
+    function sum(value1, value2: Integer): Integer;
+    Function sub(value1, value2: Integer): Integer;
+    Function mult(value1, value2: Integer): Integer;
     function divd(value1, value2: Integer): Integer;
     function divdReal(value1, value2: Currency): Currency;
     function modd(value1, value2: Integer): Integer;
@@ -48,54 +49,51 @@ implementation
 {$R *.dfm}
 
 procedure TForm1.btnDivdRealClick(Sender: TObject);
-var Result : Currency;
-
+var
+  Result: Currency;
 begin
   Result := divdReal(StrToCurr(edValue1.Text), StrToCurr(edValue2.Text));
   edResult.Text := CurrToStr(Result);
 end;
 
 procedure TForm1.btnModClick(Sender: TObject);
-var Result : Integer;
-
+var
+  Result: Integer;
 begin
   Result := modd(StrToInt(edValue1.Text), StrToInt(edValue2.Text));
   edResult.Text := IntToStr(Result);
-
 end;
 
 procedure TForm1.btnMultClick(Sender: TObject);
-var Result : Integer;
-
+var
+  Result: Integer;
 begin
   Result := mult(StrToInt(edValue1.Text), StrToInt(edValue2.Text));
   edResult.Text := IntToStr(Result);
 end;
 
 procedure TForm1.btnSubClick(Sender: TObject);
-var Result : Integer;
-
+var
+  Result: Integer;
 begin
   Result := sub(StrToInt(edValue1.Text), StrToInt(edValue2.Text));
   edResult.Text := IntToStr(Result);
-
 end;
 
 procedure TForm1.btnSumClick(Sender: TObject);
-var Result : Integer;
-
+var
+  Result: Integer;
 begin
   Result := sum(StrToInt(edValue1.Text), StrToInt(edValue2.Text));
   edResult.Text := IntToStr(Result);
 end;
 
 procedure TForm1.btnDivdClick(Sender: TObject);
-var Result : Integer;
-
+var
+  Result: Integer;
 begin
   Result := divd(StrToInt(edValue1.Text), StrToInt(edValue2.Text));
   edResult.Text := IntToStr(Result);
-
 end;
 
 function TForm1.divd(value1, value2: Integer): Integer;
