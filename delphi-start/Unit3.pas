@@ -3,7 +3,8 @@ unit Unit3;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
 
 type
@@ -25,8 +26,8 @@ implementation
 
 procedure TForm3.Button1Click(Sender: TObject);
 var
-  Name : String;
-  Surname : String;
+  Name: String;
+  Surname: String;
 begin
   Name := InputBox('Enter with dados', 'Enter with name', '');
   Surname := InputBox('Enter with dados', 'Enter with surname', '');

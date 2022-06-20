@@ -2,8 +2,8 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 403
-  ClientWidth = 450
+  ClientHeight = 233
+  ClientWidth = 332
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -44,7 +44,7 @@ object Form1: TForm1
     Layout = tlCenter
   end
   object Label5: TLabel
-    Left = 128
+    Left = 30
     Top = 110
     Width = 57
     Height = 13
@@ -72,7 +72,7 @@ object Form1: TForm1
     TabOrder = 2
   end
   object btnSum: TButton
-    Left = 112
+    Left = 14
     Top = 191
     Width = 44
     Height = 25
@@ -81,7 +81,7 @@ object Form1: TForm1
     OnClick = btnSumClick
   end
   object btnSub: TButton
-    Left = 167
+    Left = 69
     Top = 191
     Width = 41
     Height = 25
@@ -90,7 +90,7 @@ object Form1: TForm1
     OnClick = btnSubClick
   end
   object btnMult: TButton
-    Left = 167
+    Left = 69
     Top = 160
     Width = 41
     Height = 25
@@ -99,7 +99,7 @@ object Form1: TForm1
     OnClick = btnMultClick
   end
   object btnDivdReal: TButton
-    Left = 112
+    Left = 14
     Top = 160
     Width = 44
     Height = 25
@@ -108,7 +108,7 @@ object Form1: TForm1
     OnClick = btnDivdRealClick
   end
   object btnDivd: TButton
-    Left = 112
+    Left = 14
     Top = 129
     Width = 44
     Height = 25
@@ -117,7 +117,7 @@ object Form1: TForm1
     OnClick = btnDivdClick
   end
   object btnMod: TButton
-    Left = 167
+    Left = 69
     Top = 129
     Width = 41
     Height = 25

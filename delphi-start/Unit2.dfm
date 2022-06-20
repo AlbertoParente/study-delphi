@@ -2,8 +2,8 @@ object Form2: TForm2
   Left = 0
   Top = 0
   Caption = 'Form2'
-  ClientHeight = 476
-  ClientWidth = 684
+  ClientHeight = 350
+  ClientWidth = 234
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -36,36 +36,6 @@ object Form2: TForm2
   end
   object Label4: TLabel
     Left = 8
-    Top = 125
-    Width = 48
-    Height = 13
-    Alignment = taCenter
-    Caption = 'Resultado'
-    Layout = tlCenter
-  end
-  object Label5: TLabel
-    Left = 504
-    Top = 51
-    Width = 8
-    Height = 13
-    Caption = '='
-  end
-  object Label6: TLabel
-    Left = 376
-    Top = 8
-    Width = 35
-    Height = 13
-    Caption = 'Value 1'
-  end
-  object Label7: TLabel
-    Left = 376
-    Top = 51
-    Width = 35
-    Height = 13
-    Caption = 'Value 2'
-  end
-  object Label8: TLabel
-    Left = 352
     Top = 125
     Width = 48
     Height = 13
@@ -221,154 +191,5 @@ object Form2: TForm2
     Height = 25
     Caption = ','
     TabOrder = 18
-  end
-  object Button1: TButton
-    Left = 517
-    Top = 318
-    Width = 49
-    Height = 25
-    Caption = 'Calc'
-    TabOrder = 19
-  end
-  object Edit1: TEdit
-    Left = 358
-    Top = 27
-    Width = 115
-    Height = 21
-    TabOrder = 20
-  end
-  object Edit2: TEdit
-    Left = 358
-    Top = 70
-    Width = 115
-    Height = 21
-    TabOrder = 21
-  end
-  object Edit3: TEdit
-    Left = 352
-    Top = 144
-    Width = 214
-    Height = 21
-    TabOrder = 22
-  end
-  object Button2: TButton
-    Left = 517
-    Top = 287
-    Width = 49
-    Height = 25
-    Caption = '+'
-    TabOrder = 23
-  end
-  object Button3: TButton
-    Left = 517
-    Top = 256
-    Width = 49
-    Height = 25
-    Caption = '-'
-    TabOrder = 24
-  end
-  object Button4: TButton
-    Left = 517
-    Top = 225
-    Width = 49
-    Height = 25
-    Caption = 'x'
-    TabOrder = 25
-  end
-  object Button5: TButton
-    Left = 517
-    Top = 194
-    Width = 49
-    Height = 25
-    Caption = '/'
-    TabOrder = 26
-  end
-  object Button6: TButton
-    Left = 352
-    Top = 194
-    Width = 49
-    Height = 26
-    Caption = '7'
-    TabOrder = 27
-  end
-  object Button7: TButton
-    Left = 407
-    Top = 194
-    Width = 49
-    Height = 25
-    Caption = '8'
-    TabOrder = 28
-  end
-  object Button8: TButton
-    Left = 462
-    Top = 194
-    Width = 49
-    Height = 25
-    Caption = '9'
-    TabOrder = 29
-  end
-  object Button9: TButton
-    Left = 352
-    Top = 236
-    Width = 49
-    Height = 25
-    Caption = '4'
-    TabOrder = 30
-  end
-  object Button10: TButton
-    Left = 462
-    Top = 236
-    Width = 49
-    Height = 25
-    Caption = '6'
-    TabOrder = 31
-  end
-  object Button11: TButton
-    Left = 407
-    Top = 236
-    Width = 49
-    Height = 25
-    Caption = '5'
-    TabOrder = 32
-  end
-  object Button12: TButton
-    Left = 352
-    Top = 276
-    Width = 49
-    Height = 25
-    Caption = '1'
-    TabOrder = 33
-  end
-  object Button13: TButton
-    Left = 462
-    Top = 276
-    Width = 49
-    Height = 25
-    Caption = '3'
-    TabOrder = 34
-  end
-  object Button14: TButton
-    Left = 407
-    Top = 276
-    Width = 49
-    Height = 25
-    Caption = '2'
-    TabOrder = 35
-  end
-  object Button15: TButton
-    Left = 352
-    Top = 318
-    Width = 104
-    Height = 25
-    Caption = '0'
-    TabOrder = 36
-  end
-  object Button16: TButton
-    Left = 462
-    Top = 318
-    Width = 49
-    Height = 25
-    Caption = ','
-    TabOrder = 37
   end
 end
