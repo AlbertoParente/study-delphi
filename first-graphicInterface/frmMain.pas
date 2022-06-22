@@ -5,7 +5,8 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
   System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Data.DB,
+  Vcl.Grids, Vcl.DBGrids;
 
 type
   TForm1 = class(TForm)
@@ -13,6 +14,11 @@ type
     Button1: TButton;
     Panel1: TPanel;
     Memo1: TMemo;
+    Panel2: TPanel;
+    Button2: TButton;
+    Edit2: TEdit;
+    Memo2: TMemo;
+    DBGrid1: TDBGrid;
     procedure Edit1Change(Sender: TObject);
     procedure Edit1Enter(Sender: TObject);
     procedure Memo1Change(Sender: TObject);
