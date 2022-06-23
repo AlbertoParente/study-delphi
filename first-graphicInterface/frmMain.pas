@@ -14,10 +14,6 @@ type
     Button1: TButton;
     Panel1: TPanel;
     Memo1: TMemo;
-    Panel2: TPanel;
-    Button2: TButton;
-    Edit2: TEdit;
-    Memo2: TMemo;
     DBGrid1: TDBGrid;
     procedure Edit1Change(Sender: TObject);
     procedure Edit1Enter(Sender: TObject);
