@@ -10,6 +10,7 @@ object Form1: TForm1
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
+  Menu = MainMenu1
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
@@ -33,11 +34,12 @@ object Form1: TForm1
       Left = 0
       Top = 17
       Width = 489
-      Height = 33
+      Height = 21
       TabOrder = 1
       Text = 'Edit1'
       OnChange = Edit1Change
       OnEnter = Edit1Enter
+      OnExit = Edit1Exit
     end
   end
   object Memo1: TMemo
@@ -48,18 +50,33 @@ object Form1: TForm1
     Lines.Strings = (
       'Memo1')
     TabOrder = 1
-    OnChange = Memo1Change
   end
-  object DBGrid1: TDBGrid
-    Left = 8
-    Top = 215
-    Width = 593
-    Height = 205
-    TabOrder = 2
-    TitleFont.Charset = DEFAULT_CHARSET
-    TitleFont.Color = clWindowText
-    TitleFont.Height = -11
-    TitleFont.Name = 'Tahoma'
-    TitleFont.Style = []
+  object MainMenu1: TMainMenu
+    Left = 304
+    Top = 136
+    object Start1: TMenuItem
+      Caption = 'Start'
+      object est1: TMenuItem
+        Caption = 'Test 1'
+        object est21: TMenuItem
+          Caption = 'Test 1'
+        end
+        object est31: TMenuItem
+          Caption = 'Test 2'
+        end
+        object est32: TMenuItem
+          Caption = 'Test 3'
+        end
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object est22: TMenuItem
+        Caption = 'Test 2'
+      end
+      object est33: TMenuItem
+        Caption = 'Test 3'
+      end
+    end
   end
 end

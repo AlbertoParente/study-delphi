@@ -6,7 +6,7 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
   System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Data.DB,
-  Vcl.Grids, Vcl.DBGrids;
+  Vcl.Grids, Vcl.DBGrids, Vcl.Menus;
 
 type
   TForm1 = class(TForm)
@@ -14,11 +14,19 @@ type
     Button1: TButton;
     Panel1: TPanel;
     Memo1: TMemo;
-    DBGrid1: TDBGrid;
+    MainMenu1: TMainMenu;
+    Start1: TMenuItem;
+    est1: TMenuItem;
+    est21: TMenuItem;
+    est31: TMenuItem;
+    est32: TMenuItem;
+    N1: TMenuItem;
+    est22: TMenuItem;
+    est33: TMenuItem;
     procedure Edit1Change(Sender: TObject);
     procedure Edit1Enter(Sender: TObject);
-    procedure Memo1Change(Sender: TObject);
     procedure Button1Click(Sender: TObject);
+    procedure Edit1Exit(Sender: TObject);
   private
     { Private declarations }
   public
@@ -34,12 +42,12 @@ implementation
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
-  Memo1.Clear;
+  Memo1.Lines.Clear;
 end;
 
 procedure TForm1.Edit1Change(Sender: TObject);
 begin
-  ShowMessage('Runnig...!');
+  Memo1.Lines.Add(Edit1.Text);
 end;
 
 procedure TForm1.Edit1Enter(Sender: TObject);
@@ -47,9 +55,9 @@ begin
   ShowMessage('Entering...!');
 end;
 
-procedure TForm1.Memo1Change(Sender: TObject);
+procedure TForm1.Edit1Exit(Sender: TObject);
 begin
-  Memo1.Lines.Add(Edit1.Text);
+  ShowMessage('Runnig...!');
 end;
 
 end.
