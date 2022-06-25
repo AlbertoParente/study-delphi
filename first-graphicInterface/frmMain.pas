@@ -32,6 +32,7 @@ type
     est23: TMenuItem;
     est13: TMenuItem;
     Button2: TButton;
+    Start: TButton;
     procedure Edit1Change(Sender: TObject);
     procedure Edit1Enter(Sender: TObject);
     procedure Button1Click(Sender: TObject);

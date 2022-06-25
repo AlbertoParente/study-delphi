@@ -24,9 +24,6 @@ object Form1: TForm1
     Align = alTop
     Caption = 'Panel1'
     TabOrder = 0
-    ExplicitLeft = 8
-    ExplicitTop = 8
-    ExplicitWidth = 593
     object Button1: TButton
       Left = 504
       Top = 6
@@ -43,36 +40,43 @@ object Form1: TForm1
       Height = 71
       Align = alLeft
       TabOrder = 1
-      Text = 'Edit1'
       OnChange = Edit1Change
       OnEnter = Edit1Enter
       OnExit = Edit1Exit
+      ExplicitHeight = 21
     end
   end
   object Memo1: TMemo
     Left = 0
-    Top = 232
+    Top = 120
     Width = 652
-    Height = 196
+    Height = 308
     Align = alBottom
     Lines.Strings = (
       'Memo1')
     PopupMenu = PopupMenu1
     TabOrder = 1
-    ExplicitWidth = 609
   end
   object Button2: TButton
-    Left = 568
-    Top = 176
+    Left = 569
+    Top = 79
     Width = 75
     Height = 25
     Caption = 'Exit'
     TabOrder = 2
     OnClick = Button2Click
   end
+  object Start: TButton
+    Left = 432
+    Top = 79
+    Width = 75
+    Height = 25
+    Caption = 'Start'
+    TabOrder = 3
+  end
   object MainMenu1: TMainMenu
-    Left = 568
-    Top = 88
+    Left = 8
+    Top = 80
     object Start1: TMenuItem
       Caption = 'Start'
       object est1: TMenuItem
@@ -99,8 +103,8 @@ object Form1: TForm1
     end
   end
   object PopupMenu1: TPopupMenu
-    Left = 296
-    Top = 120
+    Left = 8
+    Top = 144
     object est2: TMenuItem
       Caption = 'Test 1'
     end
@@ -112,8 +116,8 @@ object Form1: TForm1
     end
   end
   object PopupMenu2: TPopupMenu
-    Left = 408
-    Top = 152
+    Left = 8
+    Top = 112
     object est12: TMenuItem
       Caption = 'Test 1'
     end
