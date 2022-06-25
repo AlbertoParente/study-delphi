@@ -23,10 +23,20 @@ type
     N1: TMenuItem;
     est22: TMenuItem;
     est33: TMenuItem;
+    PopupMenu1: TPopupMenu;
+    est2: TMenuItem;
+    Rest21: TMenuItem;
+    est11: TMenuItem;
+    PopupMenu2: TPopupMenu;
+    est12: TMenuItem;
+    est23: TMenuItem;
+    est13: TMenuItem;
+    Button2: TButton;
     procedure Edit1Change(Sender: TObject);
     procedure Edit1Enter(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Edit1Exit(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -43,6 +53,12 @@ implementation
 procedure TForm1.Button1Click(Sender: TObject);
 begin
   Memo1.Lines.Clear;
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+  ShowMessage('See you late...!');
+  Close;
 end;
 
 procedure TForm1.Edit1Change(Sender: TObject);
