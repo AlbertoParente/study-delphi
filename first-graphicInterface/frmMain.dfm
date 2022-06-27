@@ -14,6 +14,9 @@ object Form1: TForm1
   OldCreateOrder = False
   PopupMenu = PopupMenu2
   Position = poDesktopCenter
+  DesignSize = (
+    652
+    428)
   PixelsPerInch = 96
   TextHeight = 13
   object Panel1: TPanel
@@ -62,21 +65,14 @@ object Form1: TForm1
     Top = 79
     Width = 75
     Height = 25
+    Anchors = [akRight, akBottom]
     Caption = 'Exit'
     TabOrder = 2
     OnClick = Button2Click
   end
-  object Start: TButton
-    Left = 432
-    Top = 79
-    Width = 75
-    Height = 25
-    Caption = 'Start'
-    TabOrder = 3
-  end
   object MainMenu1: TMainMenu
-    Left = 8
-    Top = 80
+    Left = 616
+    Top = 312
     object Start1: TMenuItem
       Caption = 'Start'
       object est1: TMenuItem
@@ -103,8 +99,8 @@ object Form1: TForm1
     end
   end
   object PopupMenu1: TPopupMenu
-    Left = 8
-    Top = 144
+    Left = 616
+    Top = 376
     object est2: TMenuItem
       Caption = 'Test 1'
     end
@@ -116,8 +112,8 @@ object Form1: TForm1
     end
   end
   object PopupMenu2: TPopupMenu
-    Left = 8
-    Top = 112
+    Left = 616
+    Top = 344
     object est12: TMenuItem
       Caption = 'Test 1'
     end
