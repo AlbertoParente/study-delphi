@@ -63,4 +63,54 @@ object Form1: TForm1
     TabOrder = 5
     Text = 'Edit2'
   end
+  object Button3: TButton
+    Left = 446
+    Top = 56
+    Width = 75
+    Height = 25
+    Caption = 'Button1'
+    TabOrder = 6
+    OnClick = Button1Click
+  end
+  object Edit3: TEdit
+    Left = 304
+    Top = 16
+    Width = 217
+    Height = 21
+    TabOrder = 7
+    Text = 'Edit1'
+  end
+  object CheckBox3: TCheckBox
+    Left = 304
+    Top = 56
+    Width = 97
+    Height = 17
+    Caption = 'True or False'
+    TabOrder = 8
+  end
+  object CheckBox4: TCheckBox
+    Left = 304
+    Top = 88
+    Width = 97
+    Height = 17
+    Caption = 'CheckBox2'
+    TabOrder = 9
+  end
+  object Button4: TButton
+    Left = 446
+    Top = 195
+    Width = 75
+    Height = 25
+    Caption = 'Button2'
+    TabOrder = 10
+    OnClick = Button2Click
+  end
+  object Edit4: TEdit
+    Left = 304
+    Top = 160
+    Width = 217
+    Height = 21
+    TabOrder = 11
+    Text = 'Edit2'
+  end
 end

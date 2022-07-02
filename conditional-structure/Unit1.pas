@@ -15,6 +15,12 @@ type
     CheckBox2: TCheckBox;
     Button2: TButton;
     Edit2: TEdit;
+    Button3: TButton;
+    Edit3: TEdit;
+    CheckBox3: TCheckBox;
+    CheckBox4: TCheckBox;
+    Button4: TButton;
+    Edit4: TEdit;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
   private
@@ -37,19 +43,20 @@ begin
   else if CheckBox2.Checked then
     ShowMessage('CheckBox2 is True!')
   else
-  ShowMessage('False');
+    ShowMessage('False');
 
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);
 var
-  Returnn : Integer;
+  Returnn: Integer;
 begin
-  Returnn := MessageDlg('Do you want to continue the apllication?', TMsgDlgType.mtConfirmation, [TMsgDlgBtn.mbYes, TMsgDlgBtn.mbNo], 0);
+  Returnn := MessageDlg('Do you want to continue the apllication?',
+    TMsgDlgType.mtConfirmation, [TMsgDlgBtn.mbYes, TMsgDlgBtn.mbNo], 0);
   if Returnn = 6 then
     ShowMessage('Welcome!')
-    else
-      Close;
+  else
+    Close;
 end;
 
 end.
