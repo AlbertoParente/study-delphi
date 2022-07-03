@@ -16,13 +16,11 @@ type
     Button2: TButton;
     Edit2: TEdit;
     Button3: TButton;
-    Edit3: TEdit;
-    CheckBox3: TCheckBox;
-    CheckBox4: TCheckBox;
     Button4: TButton;
-    Edit4: TEdit;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -57,6 +55,20 @@ begin
     ShowMessage('Welcome!')
   else
     Close;
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+  if 100 > 800 then
+    ShowMessage('1000 is >');
+
+end;
+
+procedure TForm1.Button4Click(Sender: TObject);
+begin
+  if (1 = 1) or (2 = 3) then
+    ShowMessage('error';)
+
 end;
 
 end.
