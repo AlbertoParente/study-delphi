@@ -17,10 +17,12 @@ type
     Edit2: TEdit;
     Button3: TButton;
     Button4: TButton;
+    Button5: TButton;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -67,8 +69,21 @@ end;
 procedure TForm1.Button4Click(Sender: TObject);
 begin
   if (1 = 1) or (2 = 3) then
-    ShowMessage('error';)
+    ShowMessage('error');
+end;
 
+procedure TForm1.Button5Click(Sender: TObject);
+begin
+  if 1 = 1 then
+  begin
+    ShowMessage('True');
+    ShowMessage('True, True');
+  end
+  else
+  begin
+    ShowMessage('Error');
+    ShowMessage('Error, Error');
+  end;
 end;
 
 end.

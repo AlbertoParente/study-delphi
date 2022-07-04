@@ -2,8 +2,8 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 322
-  ClientWidth = 562
+  ClientHeight = 195
+  ClientWidth = 422
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -32,7 +32,7 @@ object Form1: TForm1
   end
   object CheckBox1: TCheckBox
     Left = 48
-    Top = 56
+    Top = 43
     Width = 97
     Height = 17
     Caption = 'True or False'
@@ -40,7 +40,7 @@ object Form1: TForm1
   end
   object CheckBox2: TCheckBox
     Left = 48
-    Top = 88
+    Top = 66
     Width = 97
     Height = 17
     Caption = 'CheckBox2'
@@ -48,7 +48,7 @@ object Form1: TForm1
   end
   object Button2: TButton
     Left = 190
-    Top = 195
+    Top = 146
     Width = 75
     Height = 25
     Caption = 'Button2'
@@ -57,15 +57,15 @@ object Form1: TForm1
   end
   object Edit2: TEdit
     Left = 48
-    Top = 160
+    Top = 111
     Width = 217
     Height = 21
     TabOrder = 5
     Text = 'Edit2'
   end
   object Button3: TButton
-    Left = 416
-    Top = 72
+    Left = 280
+    Top = 14
     Width = 75
     Height = 25
     Caption = 'Button3'
@@ -73,12 +73,21 @@ object Form1: TForm1
     OnClick = Button3Click
   end
   object Button4: TButton
-    Left = 408
-    Top = 192
+    Left = 280
+    Top = 56
     Width = 75
     Height = 25
     Caption = 'Button4'
     TabOrder = 7
     OnClick = Button4Click
+  end
+  object Button5: TButton
+    Left = 280
+    Top = 104
+    Width = 75
+    Height = 25
+    Caption = 'Button5'
+    TabOrder = 8
+    OnClick = Button5Click
   end
 end
