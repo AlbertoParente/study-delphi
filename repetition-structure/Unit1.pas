@@ -11,7 +11,13 @@ type
     Button1: TButton;
     ProgressBar1: TProgressBar;
     ProgressBar2: TProgressBar;
+    Button2: TButton;
+    Memo1: TMemo;
+    Memo2: TMemo;
+    Button3: TButton;
     procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -41,6 +47,31 @@ begin
     Application.ProcessMessages;
   end;
 
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+var
+  I : Integer;
+begin
+  I := 0;
+  while I <= 10 do
+  begin
+    Memo1.Lines.Add('Line: ' + IntToStr(I));
+    Inc(I);
+  end;
+
+  Memo1.Lines.Add('Finished!')
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+var
+  I : Integer;
+begin
+  I := 1;
+  repeat
+    Memo2.Lines.Add('Line: ' + IntToStr(I));
+    Inc(I);
+  until (I > 10);
 end;
 
 end.
