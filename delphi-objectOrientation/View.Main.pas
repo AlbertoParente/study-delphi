@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
   System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Person;
 
 type
   TForm1 = class(TForm)
@@ -25,8 +25,19 @@ implementation
 {$R *.dfm}
 
 procedure TForm1.Button1Click(Sender: TObject);
+var
+  person : TPerson;
 begin
-  //
+  person := TPerson.Create;
+  try
+    person.Id := 1;
+    person.Name := 'Alberto Parente';
+    person.Typee := 'M';
+    person.Email := 'albertoparentefh@gmail.com';
+    ShowMessage(person.Id.ToString +' - '+ person.Name +' - '+ person.Typee +' - '+ person.Email);
+  finally
+    person.Free;
+  end;
 end;
 
 end.

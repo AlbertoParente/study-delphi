@@ -3,12 +3,14 @@ unit Person;
 interface
 
 type
-  TPesron = class
+  TPerson = class
   private
     FCPF: String;
   public
-    Name: String;
-    property CPF: String read FCPF write FCPF;
+    Id    : Integer;
+    Name  : String;
+    Typee : String;
+    Email : String;
   end;
 
 implementation
