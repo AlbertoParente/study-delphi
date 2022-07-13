@@ -9,6 +9,9 @@
         <Projects Include="..\objectOrientation-encapsulation\Project2.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="..\objectOrientation-encapsulation\Project3.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -35,14 +38,23 @@
     <Target Name="Project2:Make">
         <MSBuild Projects="..\objectOrientation-encapsulation\Project2.dproj" Targets="Make"/>
     </Target>
+    <Target Name="Project3">
+        <MSBuild Projects="..\objectOrientation-encapsulation\Project3.dproj"/>
+    </Target>
+    <Target Name="Project3:Clean">
+        <MSBuild Projects="..\objectOrientation-encapsulation\Project3.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project3:Make">
+        <MSBuild Projects="..\objectOrientation-encapsulation\Project3.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="Project1;Project2"/>
+        <CallTarget Targets="Project1;Project2;Project3"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="Project1:Clean;Project2:Clean"/>
+        <CallTarget Targets="Project1:Clean;Project2:Clean;Project3:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="Project1:Make;Project2:Make"/>
+        <CallTarget Targets="Project1:Make;Project2:Make;Project3:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
