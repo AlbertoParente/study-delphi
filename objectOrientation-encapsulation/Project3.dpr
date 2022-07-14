@@ -4,7 +4,8 @@ uses
   Vcl.Forms,
   Main in 'Main.pas' {Form3},
   FunctionsDate in 'FunctionsDate.pas',
-  Utils in 'Utils.pas';
+  Utils in 'Utils.pas',
+  person in 'person.pas';
 
 {$R *.res}
 

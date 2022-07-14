@@ -9,6 +9,8 @@ uses
 type
   TForm3 = class(TForm)
     Button1: TButton;
+    Memo1: TMemo;
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -20,6 +22,23 @@ var
 
 implementation
 
+uses
+  person;
+
 {$R *.dfm}
+
+procedure TForm3.Button1Click(Sender: TObject);
+var
+  person : TPerson;
+begin
+  person := TPerson.Create;
+  try
+    person.Name      := 'Alberto Parente';
+    person.BirthDate := '13/08/1998';
+    ShowMessage(person.Name + ' - ' + person.Age.Functions.CalcAge(person.BirthDate).ToString);
+  finally
+    person.Free;
+  end;
+end;
 
 end.

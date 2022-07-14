@@ -2,9 +2,12 @@ unit Utils;
 
 interface
 
+uses
+  FunctionsDate;
+
 type
   TUtils = class
-    function Functions : TFunctionsData;
+    function Functions : TFunctionDate;
   end;
 
 implementation
@@ -15,9 +18,9 @@ implementation
 
 { TUtils }
 
-function TUtils.Functions: TFunctionsData;
+function TUtils.Functions: TFunctionDate;
 begin
-  Result := TFunctionsDate.Create;
+  Result := TFunctionDate.Create;
 end;
 
 end.
