@@ -16,7 +16,7 @@ implementation
 
 function TFunctionDate.CalcAge(Value: String): Integer;
 begin
-  Result := Trunc((now - StrToDate(Value)) / 365.25);
+
 end;
 
 end.

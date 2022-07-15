@@ -3,24 +3,18 @@ unit Utils;
 interface
 
 uses
-  FunctionsDate;
+  System.SysUtils;
 
 type
   TUtils = class
-    function Functions : TFunctionDate;
+    function CalcAge(Value: String) : Integer;
+  private
   end;
 
 implementation
 
-{ TUtils }
-
-
-
-{ TUtils }
-
-function TUtils.Functions: TFunctionDate;
+function TUtils.CalcAge(Value: String): Integer;
 begin
-  Result := TFunctionDate.Create;
+  Result := Trunc((now - StrToDate(Value)) / 365.25);
 end;
-
 end.

@@ -35,7 +35,7 @@ begin
   try
     person.Name      := 'Alberto Parente';
     person.BirthDate := '13/08/1998';
-    ShowMessage(person.Name + ' - ' + person.Age.Functions.CalcAge(person.BirthDate).ToString);
+    ShowMessage(person.Name + ' - ' + person.Age.CalcAge(person.BirthDate).ToString);
   finally
     person.Free;
   end;
