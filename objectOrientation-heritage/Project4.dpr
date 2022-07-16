@@ -2,8 +2,9 @@ program Project4;
 
 uses
   Vcl.Forms,
-  Unit4 in 'Unit4.pas' {Form4},
-  Person in 'Person.pas';
+  Main in 'Main.pas' {Form4},
+  Person in 'Person.pas',
+  Client in 'Client.pas';
 
 {$R *.res}
 

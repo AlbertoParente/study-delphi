@@ -6,7 +6,7 @@ uses
   System.SysUtils;
 
 type
-  TPerson = class
+  TPerson = class(TObject)
   private
   public
     Name: String;

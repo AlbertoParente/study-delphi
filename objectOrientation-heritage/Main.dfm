@@ -20,12 +20,13 @@ object Form4: TForm4
     Height = 25
     Caption = 'Button1'
     TabOrder = 0
+    OnClick = Button1Click
   end
   object Memo1: TMemo
-    Left = 48
-    Top = 80
-    Width = 185
-    Height = 89
+    Left = 24
+    Top = 48
+    Width = 209
+    Height = 121
     TabOrder = 1
   end
 end
