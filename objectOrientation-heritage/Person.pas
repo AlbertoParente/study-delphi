@@ -11,6 +11,7 @@ type
   public
     Name: String;
     BirthDate : String;
+    Email: String;
     function Age : Integer;
   end;
 

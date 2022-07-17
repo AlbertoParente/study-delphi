@@ -9,7 +9,7 @@ type
   TClient = class(TPerson)
   private
   public
-    value : Currency;
+    valueCredit : Currency;
   end;
 
 implementation

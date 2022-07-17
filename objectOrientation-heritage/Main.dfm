@@ -2,8 +2,8 @@ object Form4: TForm4
   Left = 0
   Top = 0
   Caption = 'Form4'
-  ClientHeight = 201
-  ClientWidth = 447
+  ClientHeight = 287
+  ClientWidth = 407
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -25,8 +25,8 @@ object Form4: TForm4
   object Memo1: TMemo
     Left = 24
     Top = 48
-    Width = 209
-    Height = 121
+    Width = 337
+    Height = 217
     TabOrder = 1
   end
 end
