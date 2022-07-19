@@ -11,7 +11,7 @@ type
   private
     FValueCredit: Currency;
   public
-    property ValueCredit: Currency read FValueCredit write FValueCredit;
+    property ValueCredit: Currency read FValueCredit;
     function Receiver(Value: Integer): String;
   end;
 

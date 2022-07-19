@@ -11,11 +11,11 @@ type
   TForm5 = class(TForm)
     Button1: TButton;
     Memo1: TMemo;
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
     { Public declarations }
-    function receive(Value: Integer): String; overload;
   end;
 
 var
@@ -23,12 +23,33 @@ var
 
 implementation
 
+uses
+  Person, Client;
+
 {$R *.dfm}
 { TForm5 }
 
-function TForm5.receive(Value: Integer): String;
+procedure TForm5.Button1Click(Sender: TObject);
+var
+  Person : TPerson;
+  Client : TClient;
 begin
-  //
+  Memo1.Clear;
+  Person := TPerson.Create;
+  Client := TClient.Create;
+  try
+    Person.Name := 'Alberto Parente';
+    Person.BirthDate := '13/08/1992';
+    Person.Email := 'albertoparentefh@gmail.com';
+
+    Memo1.Lines.Add(Person.Name);
+    Memo1.Lines.Add(Person.BirthDate);
+    Memo1.Lines.Add(Person.Email);
+    Memo1.Lines.Add(Client.Receiver(1));
+  finally
+    Person.Free;
+    Client.Free;
+  end;
 end;
 
 end.

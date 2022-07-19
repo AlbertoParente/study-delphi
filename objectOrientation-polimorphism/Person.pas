@@ -9,7 +9,7 @@ type
   TPerson = class(TObject)
   private
     FName: String;
-    FDataNascimento: String;
+    FBirthDate: String;
     FEmail: String;
   public
     { Name: String;
@@ -17,7 +17,7 @@ type
       Email: String; }
     function Age: Integer;
     property Name: String read FName write FName;
-    property DataNascimento: String read FDataNascimento write FDataNascimento;
+    property BirthDate: String read FBirthDate write FBirthDate;
     property Email: String read FEmail write FEmail;
 
   end;
