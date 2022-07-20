@@ -11,6 +11,7 @@ type
   TForm5 = class(TForm)
     Button1: TButton;
     Memo1: TMemo;
+    Label1: TLabel;
     procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
