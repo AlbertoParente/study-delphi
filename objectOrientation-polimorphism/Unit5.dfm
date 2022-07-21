@@ -16,8 +16,8 @@ object Form5: TForm5
   object Label1: TLabel
     Left = 8
     Top = 8
-    Width = 113
-    Height = 18
+    Width = 84
+    Height = 13
     Caption = 'Heritage Concept'
   end
   object Button1: TButton

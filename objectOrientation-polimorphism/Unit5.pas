@@ -32,8 +32,8 @@ uses
 
 procedure TForm5.Button1Click(Sender: TObject);
 var
-  Person : TPerson;
-  Client : TClient;
+  Person: TPerson;
+  Client: TClient;
 begin
   Memo1.Clear;
   Person := TPerson.Create;
@@ -43,10 +43,13 @@ begin
     Person.BirthDate := '13/08/1992';
     Person.Email := 'albertoparentefh@gmail.com';
 
-    Memo1.Lines.Add(Person.Name);
-    Memo1.Lines.Add(Person.BirthDate);
-    Memo1.Lines.Add(Person.Email);
-    Memo1.Lines.Add(Client.Receiver(1));
+    Memo1.Lines.Add('Name: ' + Person.Name);
+    Memo1.Lines.Add('Birth Date: ' + Person.BirthDate);
+    Memo1.Lines.Add('Email: ' + Person.Email);
+    Memo1.Lines.Add('Age: ' + Person.Age.ToString);
+    Memo1.Lines.Add('Received Int: ' + Client.Receiver(1));
+    Memo1.Lines.Add('Received Curr: ' + Client.Receiver(10.50));
+    Memo1.Lines.Add('Value Credit: ' + CurrToStr(Client.ValueCredit));
   finally
     Person.Free;
     Client.Free;

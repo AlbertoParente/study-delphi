@@ -13,6 +13,7 @@ type
   public
     property ValueCredit: Currency read FValueCredit;
     function Receiver(Value: Integer): String;
+    function Receiver(Value: Currency): String; Overload;
   end;
 
 implementation
@@ -22,6 +23,12 @@ implementation
 function TClient.Receiver(Value: Integer): String;
 begin
   Result := Value.ToString;
+end;
+
+function TClient.Receiver(Value: Currency): String;
+begin
+  FValueCredit := Value;
+  Result := CurrToStr(Value);
 end;
 
 end.
