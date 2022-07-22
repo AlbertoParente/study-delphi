@@ -12,7 +12,7 @@ type
     FValueCredit: Currency;
   public
     property ValueCredit: Currency read FValueCredit;
-    function Receiver(Value: Integer): String;
+    function Receiver(Value: Integer): String; Overload;
     function Receiver(Value: Currency): String; Overload;
   end;
 
@@ -27,7 +27,7 @@ end;
 
 function TClient.Receiver(Value: Currency): String;
 begin
-  FValueCredit := Value;
+  FValueCredit := Value + (Value + 0.10);
   Result := CurrToStr(Value);
 end;
 
