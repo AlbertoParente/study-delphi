@@ -21,8 +21,8 @@ object Form5: TForm5
     Caption = 'Encapsulation Concept'
   end
   object Button1: TButton
-    Left = 630
-    Top = 464
+    Left = 422
+    Top = 394
     Width = 75
     Height = 33
     Caption = 'Button1'
@@ -30,43 +30,55 @@ object Form5: TForm5
     OnClick = Button1Click
   end
   object Memo1: TMemo
-    Left = 464
-    Top = 21
-    Width = 283
+    Left = 0
+    Top = 175
+    Width = 790
     Height = 242
+    Align = alClient
     TabOrder = 1
+    ExplicitLeft = 8
+    ExplicitTop = 21
+    ExplicitWidth = 283
   end
   object Panel1: TPanel
-    Left = 17
-    Top = 139
-    Width = 425
-    Height = 345
+    Left = 0
+    Top = 0
+    Width = 790
+    Height = 175
+    Align = alTop
     Caption = 'Panel1'
     TabOrder = 2
+    ExplicitLeft = 176
+    ExplicitTop = 8
+    ExplicitWidth = 489
+    ExplicitHeight = 497
   end
   object Button2: TButton
-    Left = 32
-    Top = 88
+    Left = 406
+    Top = 433
     Width = 75
     Height = 25
     Caption = 'Button2'
     TabOrder = 3
   end
   object Button3: TButton
-    Left = 160
-    Top = 96
+    Left = 406
+    Top = 464
     Width = 75
     Height = 25
     Caption = 'Button3'
     TabOrder = 4
   end
   object Memo2: TMemo
-    Left = 464
-    Top = 280
-    Width = 305
+    Left = 0
+    Top = 417
+    Width = 790
     Height = 153
+    Align = alBottom
     Lines.Strings = (
       'Memo2')
     TabOrder = 5
+    ExplicitLeft = 8
+    ExplicitTop = 235
   end
 end
