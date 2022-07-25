@@ -12,10 +12,6 @@ type
     Button1: TButton;
     Memo1: TMemo;
     Label1: TLabel;
-    Panel1: TPanel;
-    Button2: TButton;
-    Button3: TButton;
-    Memo2: TMemo;
     procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
