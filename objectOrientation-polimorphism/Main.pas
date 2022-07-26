@@ -1,4 +1,4 @@
-unit Unit5;
+unit Main;
 
 interface
 
@@ -12,6 +12,7 @@ type
     Button1: TButton;
     Memo1: TMemo;
     Label1: TLabel;
+    Memo2: TMemo;
     procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
@@ -25,7 +26,7 @@ var
 implementation
 
 uses
-  Person, Client;
+  Person, Client, VirtualClient;
 
 {$R *.dfm}
 { TForm5 }
@@ -38,6 +39,7 @@ var
   Client2: TClient;
 begin
   Memo1.Clear;
+  Memo2.Clear;
   Person1 := TPerson.Create;
   Person2 := TPerson.Create;
   Client1 := TClient.Create;
@@ -58,13 +60,9 @@ begin
     Memo1.Lines.Add('Received Curr: ' + Client1.Receiver(10.50));
     Memo1.Lines.Add('Value Credit: ' + CurrToStr(Client1.ValueCredit));
     Memo1.Lines.Add('===============================================');
-    Memo1.Lines.Add('Name: ' + Person2.Name);
-    Memo1.Lines.Add('Birth Date: ' + Person2.BirthDate);
-    Memo1.Lines.Add('Email: ' + Person2.Email);
-    Memo1.Lines.Add('Age: ' + Person2.Age.ToString);
-    Memo1.Lines.Add('Received Int: ' + Client2.Receiver(1));
-    Memo1.Lines.Add('Received Curr: ' + Client2.Receiver(10.50));
-    Memo1.Lines.Add('Value Credit: ' + CurrToStr(Client2.ValueCredit));
+    Memo2.Lines.Add(Person.ReturnDados);
+    Memo2.Lines.Add(client.ReturnDados);
+
   finally
     Person1.Free;
     Client1.Free;
