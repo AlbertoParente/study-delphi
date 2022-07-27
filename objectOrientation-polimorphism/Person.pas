@@ -19,7 +19,7 @@ type
     property Name: String read FName write FName;
     property BirthDate: String read FBirthDate write FBirthDate;
     property Email: String read FEmail write FEmail;
-    function ReturnDados : String; virtual;
+    function ReturnDados: String; virtual;
 
   end;
 
@@ -34,9 +34,8 @@ end;
 
 function TPerson.ReturnDados: String;
 begin
-  Result := 'Name: ' + FName +
-            ', Birth Date: ' + FBirthDate +
-            ', Age: ' + Self.Age.ToString;
+  Result := 'Name: ' + FName + ', Birth Date: ' + FBirthDate + ', Age: ' +
+    Self.Age.ToString;
 end;
 
 end.

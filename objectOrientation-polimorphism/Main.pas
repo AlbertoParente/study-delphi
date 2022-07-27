@@ -56,12 +56,9 @@ begin
     Memo1.Lines.Add('Birth Date: ' + Person1.BirthDate);
     Memo1.Lines.Add('Email: ' + Person1.Email);
     Memo1.Lines.Add('Age: ' + Person1.Age.ToString);
-    Memo1.Lines.Add('Received Int: ' + Client1.Receiver(1));
-    Memo1.Lines.Add('Received Curr: ' + Client1.Receiver(10.50));
-    Memo1.Lines.Add('Value Credit: ' + CurrToStr(Client1.ValueCredit));
     Memo1.Lines.Add('===============================================');
     Memo2.Lines.Add(Person.ReturnDados);
-    Memo2.Lines.Add(client.ReturnDados);
+    Memo2.Lines.Add(Client.ReturnDados);
 
   finally
     Person1.Free;
