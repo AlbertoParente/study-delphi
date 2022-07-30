@@ -13,9 +13,16 @@ object Form6: TForm6
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
+  object Label1: TLabel
+    Left = 32
+    Top = 5
+    Width = 196
+    Height = 13
+    Caption = ' concept of polimorphism-virtual-override'
+  end
   object Button1: TButton
-    Left = 368
-    Top = 224
+    Left = 216
+    Top = 320
     Width = 75
     Height = 25
     Caption = 'Button1'
@@ -28,5 +35,13 @@ object Form6: TForm6
     Width = 297
     Height = 225
     TabOrder = 1
+  end
+  object Memo2: TMemo
+    Left = 344
+    Top = 24
+    Width = 201
+    Height = 225
+    TabOrder = 2
+    OnChange = Memo2Change
   end
 end
