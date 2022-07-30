@@ -24,10 +24,11 @@ type
 var
   Form6: TForm6;
 
-uses
-  Person, Client;
-
 implementation
+
+uses
+  VirtualPerson,
+  VirtualClient;
 
 {$R *.dfm}
 
@@ -41,6 +42,8 @@ begin
   Client := TClient.Create;
 
   Client.Name := 'Alberto Parente';
+  Client.CPF := '12345678912';
+  Client.BrithDay := '19/08/1992';
 
   Memo1.Lines.Add('============= Person =============');
   Memo1.Lines.Add('Name: ' + Person.Name);
@@ -49,6 +52,10 @@ begin
   Memo1.Lines.Add('==================================');
   Memo1.Lines.Add('============= Client =============');
   Memo1.Lines.Add('==================================');
+  Memo1.Lines.Add('Name: ' + Client.Name);
+  Memo1.Lines.Add('BrithDay: ' + Client.BrithDay);
+  Memo1.Lines.Add('Age: ' + Client.Age.ToString);
+  Memo1.Lines.Add('CPF: ' + Client.CPF);
 end;
 
 procedure TForm6.Memo2Change(Sender: TObject);

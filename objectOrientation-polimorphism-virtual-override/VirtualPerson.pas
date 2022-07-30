@@ -1,4 +1,4 @@
-unit Person;
+unit VirtualPerson;
 
 interface
 

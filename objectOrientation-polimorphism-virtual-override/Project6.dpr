@@ -3,8 +3,8 @@ program Project6;
 uses
   Vcl.Forms,
   Unit6 in 'Unit6.pas' {Form6},
-  Person in 'Person.pas',
-  Client in 'Client.pas';
+  VirtualPerson in 'VirtualPerson.pas',
+  VirtualClient in 'VirtualClient.pas';
 
 {$R *.res}
 

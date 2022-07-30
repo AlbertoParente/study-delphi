@@ -57,8 +57,8 @@ begin
     Memo1.Lines.Add('Email: ' + Person1.Email);
     Memo1.Lines.Add('Age: ' + Person1.Age.ToString);
     Memo1.Lines.Add('===============================================');
-    Memo2.Lines.Add(Person.ReturnDados);
-    Memo2.Lines.Add(Client.ReturnDados);
+    Memo2.Lines.Add(Person1.ReturnDados);
+    Memo2.Lines.Add(Client1.ReturnDados);
 
   finally
     Person1.Free;

@@ -1,9 +1,10 @@
-unit Client;
+unit VirtualClient;
 
 interface
 
 uses
-  Person;
+  VirtualPerson;
+
 type
   TClient = class(TPerson)
   private
