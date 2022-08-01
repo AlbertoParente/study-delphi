@@ -42,6 +42,5 @@ object Form6: TForm6
     Width = 201
     Height = 225
     TabOrder = 2
-    OnChange = Memo2Change
   end
 end
