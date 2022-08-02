@@ -11,7 +11,6 @@ type
   TForm6 = class(TForm)
     Button1: TButton;
     Memo1: TMemo;
-    Memo2: TMemo;
     Label1: TLabel;
     procedure Button1Click(Sender: TObject);
   private
@@ -37,7 +36,6 @@ var
   Client: TClient;
 begin
   Memo1.Clear;
-  Memo2.Clear;
 
   Person := TPerson.Create;
   Client := TClient.Create;
@@ -52,14 +50,14 @@ begin
   Memo1.Lines.Add('BrithDay: ' + Person.BrithDay);
   Memo1.Lines.Add('Age: ' + Person.Age.ToString);
   Memo1.Lines.Add('==================================');
-  Memo2.Lines.Add('==================================');
-  Memo2.Lines.Add('============= Client =============');
-  Memo2.Lines.Add('==================================');
-  Memo2.Lines.Add('Name: ' + Client.Name);
-  Memo2.Lines.Add('BrithDay: ' + Client.BrithDay);
-  Memo2.Lines.Add('Age: ' + Client.Age.ToString);
-  Memo2.Lines.Add('CPF: ' + Client.CPF);
-  Memo2.Lines.Add('==================================');
+  Memo1.Lines.Add('==================================');
+  Memo1.Lines.Add('============= Client =============');
+  Memo1.Lines.Add('==================================');
+  Memo1.Lines.Add('Name: ' + Client.Name);
+  Memo1.Lines.Add('BrithDay: ' + Client.BrithDay);
+  Memo1.Lines.Add('Age: ' + Client.Age.ToString);
+  Memo1.Lines.Add('CPF: ' + Client.CPF);
+  Memo1.Lines.Add('==================================');
 
   Memo1.Lines.Add('==================================');
   Memo1.Lines.Add('============= Person =============');
@@ -67,14 +65,14 @@ begin
   Memo1.Lines.Add('BrithDay: ' + Person.BrithDay);
   Memo1.Lines.Add('Age: ' + Person.Age.ToString);
   Memo1.Lines.Add('==================================');
-  Memo2.Lines.Add('==================================');
-  Memo2.Lines.Add('============= Client =============');
-  Memo2.Lines.Add('==================================');
-  Memo2.Lines.Add('Name: ' + Client.Name);
-  Memo2.Lines.Add('BrithDay: ' + Client.BrithDay);
-  Memo2.Lines.Add('Age: ' + Client.Age.ToString);
-  Memo2.Lines.Add('CPF: ' + Client.CPF);
-  Memo2.Lines.Add('==================================');
+  Memo1.Lines.Add('==================================');
+  Memo1.Lines.Add('============= Client =============');
+  Memo1.Lines.Add('==================================');
+  Memo1.Lines.Add('Name: ' + Client.Name);
+  Memo1.Lines.Add('BrithDay: ' + Client.BrithDay);
+  Memo1.Lines.Add('Age: ' + Client.Age.ToString);
+  Memo1.Lines.Add('CPF: ' + Client.CPF);
+  Memo1.Lines.Add('==================================');
 
   Memo1.Lines.Add('==================================');
   Memo1.Lines.Add('============= Person =============');
@@ -82,14 +80,14 @@ begin
   Memo1.Lines.Add('BrithDay: ' + Person.BrithDay);
   Memo1.Lines.Add('Age: ' + Person.Age.ToString);
   Memo1.Lines.Add('==================================');
-  Memo2.Lines.Add('==================================');
-  Memo2.Lines.Add('============= Client =============');
-  Memo2.Lines.Add('==================================');
-  Memo2.Lines.Add('Name: ' + Client.Name);
-  Memo2.Lines.Add('BrithDay: ' + Client.BrithDay);
-  Memo2.Lines.Add('Age: ' + Client.Age.ToString);
-  Memo2.Lines.Add('CPF: ' + Client.CPF);
-  Memo2.Lines.Add('==================================');
+  Memo1.Lines.Add('==================================');
+  Memo1.Lines.Add('============= Client =============');
+  Memo1.Lines.Add('==================================');
+  Memo1.Lines.Add('Name: ' + Client.Name);
+  Memo1.Lines.Add('BrithDay: ' + Client.BrithDay);
+  Memo1.Lines.Add('Age: ' + Client.Age.ToString);
+  Memo1.Lines.Add('CPF: ' + Client.CPF);
+  Memo1.Lines.Add('==================================');
 end;
 
 end.
