@@ -2,8 +2,8 @@ object Form6: TForm6
   Left = 0
   Top = 0
   Caption = 'Form6'
-  ClientHeight = 286
-  ClientWidth = 317
+  ClientHeight = 336
+  ClientWidth = 692
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -35,5 +35,12 @@ object Form6: TForm6
     Width = 297
     Height = 225
     TabOrder = 1
+  end
+  object Memo2: TMemo
+    Left = 328
+    Top = 24
+    Width = 289
+    Height = 225
+    TabOrder = 2
   end
 end

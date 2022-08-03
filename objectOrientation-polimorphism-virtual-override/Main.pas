@@ -12,6 +12,7 @@ type
     Button1: TButton;
     Memo1: TMemo;
     Label1: TLabel;
+    Memo2: TMemo;
     procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
@@ -36,6 +37,7 @@ var
   Client: TClient;
 begin
   Memo1.Clear;
+  Memo2.Clear;
 
   Person := TPerson.Create;
   Client := TClient.Create;
@@ -88,6 +90,16 @@ begin
   Memo1.Lines.Add('Age: ' + Client.Age.ToString);
   Memo1.Lines.Add('CPF: ' + Client.CPF);
   Memo1.Lines.Add('==================================');
+
+  Memo2.Lines.Add('==================================');
+  Memo2.Lines.Add('============= Person =============');
+  Memo2.Lines.Add(VirtualPerson.ReturnDados);
+  Memo2.Lines.Add('==================================');
+  Memo2.Lines.Add('==================================');
+  Memo2.Lines.Add('============= Client =============');
+  Memo2.Lines.Add('==================================');
+  Memo2.Lines.Add(Client.ReturnDados);
+  Memo2.Lines.Add('==================================');
 end;
 
 end.
