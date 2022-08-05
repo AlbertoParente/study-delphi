@@ -35,6 +35,7 @@ procedure TForm6.Button1Click(Sender: TObject);
 var
   Person: TPerson;
   Client: TClient;
+  AAccount, AAccount2 : TBankAccount;
 begin
   Memo1.Clear;
   Memo2.Clear;
@@ -105,5 +106,24 @@ begin
     Person.Free;
   end;
 end;
+
+  AAccount  := TBankAccount.Create;
+  AAccount2 := TBankAccount.Create;
+  try
+    AAccount.Name := 'Alberto Parente';
+    AAccount.Deposit(50);
+
+    AAccount2.Name := 'Juliana Cavalcante';
+    AAccount2.Deposit(500);
+    AAccount2.Withdraw(10);
+
+    Memo1.Lines.Add(AAccount.Name);
+    Memo1.Lines.Add(AAccount.Balance.ToString);
+
+    Memo1.Lines.Add(AAccount2.Name);
+    Memo1.Lines.Add(AAccount2.Balance.ToString);
+  finally
+    AAccount.DisposeOf;
+    AAccount2.DisposeOf;
 
 end.
