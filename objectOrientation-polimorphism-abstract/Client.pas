@@ -21,9 +21,8 @@ implementation
 
 function TClient.ReturnDados: String;
 begin
-  Result := 'Name: ' + Self.Name +
-            ', Brith Day: ' + Self.BrithDay +
-            ', Age: ' + Self.Age.ToString +
-            ', CPF: ' + FCpf;
+  Result := 'Name: ' + Self.Name + ', Brith Day: ' + Self.BrithDay + ', Age: ' +
+    Self.Age.ToString + ', CPF: ' + FCPF;
 end;
+
 end.

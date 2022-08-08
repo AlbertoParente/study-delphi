@@ -93,7 +93,7 @@ begin
 
     Memo2.Lines.Add('==================================');
     Memo2.Lines.Add('============= Person =============');
-    Memo2.Lines.Add(VirtualPerson.ReturnDados);
+    Memo2.Lines.Add(Person.ReturnDados);
     Memo2.Lines.Add('==================================');
     Memo2.Lines.Add('==================================');
     Memo2.Lines.Add('============= Client =============');

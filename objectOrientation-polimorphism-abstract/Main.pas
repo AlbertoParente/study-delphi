@@ -3,7 +3,8 @@ unit Main;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
 
 type
@@ -30,11 +31,11 @@ uses
 
 procedure TForm7.Button1Click(Sender: TObject);
 var
-  person: TPerson;
-  client: TClient;
+  Person: TPerson;
+  Client: TClient;
 begin
-  person := TPerson.Create;
-  client := TClient.Create;
+  Person := TPerson.Create;
+  Client := TClient.Create;
 
   try
     Client.Name := 'Alberto Parente';
@@ -88,7 +89,7 @@ begin
 
     Memo2.Lines.Add('==================================');
     Memo2.Lines.Add('============= Person =============');
-    Memo2.Lines.Add(person.ReturnDados);
+    Memo2.Lines.Add(Person.ReturnDados);
     Memo2.Lines.Add('==================================');
     Memo2.Lines.Add('==================================');
     Memo2.Lines.Add('============= Client =============');

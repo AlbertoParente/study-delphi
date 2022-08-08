@@ -15,6 +15,7 @@ type
     property BrithDay: String read FBrithDay write FBrithDay;
     function Age: Integer;
     function ReturnDados: String; virtual;
+    function contract: String; virtual; abstract;
   end;
 
 implementation
@@ -28,9 +29,8 @@ end;
 
 function TPerson.ReturnDados: String;
 begin
-  Result := 'Name: ' + FName +
-            ', Brith Day: ' + FBrithDay +
-            ', Age: ' + Self.Age.ToString;
+  Result := 'Name: ' + FName + ', Brith Day: ' + FBrithDay + ', Age: ' +
+    Self.Age.ToString;
 end;
 
 end.
