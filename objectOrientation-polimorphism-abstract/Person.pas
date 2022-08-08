@@ -2,6 +2,9 @@ unit Person;
 
 interface
 
+uses
+  System.SysUtils;
+
 type
   TPerson = class
   private
@@ -16,24 +19,18 @@ type
 
 implementation
 
+{ TPerson }
+
 function TPerson.Age: Integer;
-
 begin
-
   Result := Trunc((now - StrToDate(FBrithDay)) / 365.25);
-
 end;
 
 function TPerson.ReturnDados: String;
-
 begin
-
   Result := 'Name: ' + FName +
-
             ', Brith Day: ' + FBrithDay +
-
             ', Age: ' + Self.Age.ToString;
-
 end;
 
 end.

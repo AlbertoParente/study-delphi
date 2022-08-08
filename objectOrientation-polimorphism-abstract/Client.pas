@@ -2,7 +2,9 @@ unit Client;
 
 interface
 
-implementation
+uses
+  System.SysUtils,
+  Person;
 
 type
   TClient = class(TPerson)
@@ -12,7 +14,11 @@ type
     property CPF: string read FCPF write FCPF;
     function ReturnDados: String; Override;
   end;
-  
+
+implementation
+
+{ TClient }
+
 function TClient.ReturnDados: String;
 begin
   Result := 'Name: ' + Self.Name +
@@ -20,5 +26,4 @@ begin
             ', Age: ' + Self.Age.ToString +
             ', CPF: ' + FCpf;
 end;
-
 end.

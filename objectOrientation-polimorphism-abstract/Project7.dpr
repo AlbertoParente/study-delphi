@@ -2,7 +2,7 @@ program Project7;
 
 uses
   Vcl.Forms,
-  Unit7 in 'Unit7.pas' {Form7},
+  Main in 'Main.pas' {Form7},
   Person in 'Person.pas',
   Client in 'Client.pas';
 
