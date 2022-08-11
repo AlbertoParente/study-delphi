@@ -100,29 +100,6 @@ begin
     Client.Free;
     Person.Free;
   end;
-  
-   try
-    Person1.Name := 'Alberto Parente';
-    Person1.BirthDate := '13/08/1992';
-    Person1.Email := 'albertoparentefh@gmail.com';
-    Person2.Name := 'Juliana Cavalcante';
-    Person2.BirthDate := '13/08/1992';
-    Person2.Email := 'albertoparentefh@gmail.com';
-
-    Memo1.Lines.Add('Name: ' + Person1.Name);
-    Memo1.Lines.Add('Birth Date: ' + Person1.BirthDate);
-    Memo1.Lines.Add('Email: ' + Person1.Email);
-    Memo1.Lines.Add('Age: ' + Person1.Age.ToString);
-    Memo1.Lines.Add('===============================================');
-    Memo2.Lines.Add(Person1.ReturnDados);
-    Memo2.Lines.Add(Client1.ReturnDados);
-
-  finally
-    Person1.Free;
-    Client1.Free;
-    Person2.Free;
-    Client2.Free;
-  end;
 end;
 
 end.
