@@ -13,6 +13,8 @@ type
     Memo1: TMemo;
     Label1: TLabel;
     Memo2: TMemo;
+    Memo3: TMemo;
+    Memo4: TMemo;
     procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
@@ -38,6 +40,8 @@ var
 begin
   Memo1.Clear;
   Memo2.Clear;
+  Memo3.Clear;
+  Memo4.Clear;
 
   Person := TPerson.Create;
   Client := TClient.Create;
@@ -100,6 +104,26 @@ begin
     Memo2.Lines.Add('==================================');
     Memo2.Lines.Add(Client.ReturnDados);
     Memo2.Lines.Add('==================================');
+
+    Memo3.Lines.Add('==================================');
+    Memo3.Lines.Add('============= Person =============');
+    Memo3.Lines.Add(Person.ReturnDados);
+    Memo3.Lines.Add('==================================');
+    Memo3.Lines.Add('==================================');
+    Memo3.Lines.Add('============= Client =============');
+    Memo3.Lines.Add('==================================');
+    Memo3.Lines.Add(Client.ReturnDados);
+    Memo3.Lines.Add('==================================');
+
+    Memo4.Lines.Add('==================================');
+    Memo4.Lines.Add('============= Person =============');
+    Memo4.Lines.Add(Person.ReturnDados);
+    Memo4.Lines.Add('==================================');
+    Memo4.Lines.Add('==================================');
+    Memo4.Lines.Add('============= Client =============');
+    Memo4.Lines.Add('==================================');
+    Memo4.Lines.Add(Client.ReturnDados);
+    Memo4.Lines.Add('==================================');
   finally
     Client.Free;
     Person.Free;
