@@ -25,7 +25,7 @@ var
 implementation
 
 uses
-  Person, Client;
+  Person, Client, User;
 
 {$R *.dfm}
 
@@ -33,9 +33,13 @@ procedure TForm7.Button1Click(Sender: TObject);
 var
   Person: TPerson;
   Client: TClient;
+  User: TUser;
 begin
+  Memo1.Clear;
+  Memo2.Clear;
   Person := TPerson.Create;
   Client := TClient.Create;
+  User   := TUser.Create;
 
   try
     Client.Name := 'Alberto Parente';
@@ -55,6 +59,7 @@ begin
     Memo1.Lines.Add('BrithDay: ' + Client.BrithDay);
     Memo1.Lines.Add('Age: ' + Client.Age.ToString);
     Memo1.Lines.Add('CPF: ' + Client.CPF);
+    Memo1.Lines.Add('Contract: ' + Client.Contract);
     Memo1.Lines.Add('==================================');
 
     Memo1.Lines.Add('==================================');
@@ -71,6 +76,8 @@ begin
     Memo1.Lines.Add('Age: ' + Client.Age.ToString);
     Memo1.Lines.Add('CPF: ' + Client.CPF);
     Memo1.Lines.Add('==================================');
+
+    Memo1.Lines.Add('User: ' + User.Contract);
 
     Memo1.Lines.Add('==================================');
     Memo1.Lines.Add('============= Person =============');

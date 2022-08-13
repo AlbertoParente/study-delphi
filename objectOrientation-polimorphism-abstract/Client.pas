@@ -13,11 +13,17 @@ type
   public
     property CPF: string read FCPF write FCPF;
     function ReturnDados: String; Override;
+    function Contract: String; override;
   end;
 
 implementation
 
 { TClient }
+
+function TClient.Contract: String;
+begin
+  Result := 'TClient Contract';
+end;
 
 function TClient.ReturnDados: String;
 begin

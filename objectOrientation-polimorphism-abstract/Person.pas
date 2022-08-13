@@ -15,7 +15,7 @@ type
     property BrithDay: String read FBrithDay write FBrithDay;
     function Age: Integer;
     function ReturnDados: String; virtual;
-    function contract: String; virtual; abstract;
+    function Contract: String; virtual; abstract;
   end;
 
 implementation
