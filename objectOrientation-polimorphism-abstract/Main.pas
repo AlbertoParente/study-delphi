@@ -75,6 +75,7 @@ begin
     Memo1.Lines.Add('BrithDay: ' + Client.BrithDay);
     Memo1.Lines.Add('Age: ' + Client.Age.ToString);
     Memo1.Lines.Add('CPF: ' + Client.CPF);
+    Memo1.Lines.Add('Contract: ' + Client.Contract);
     Memo1.Lines.Add('==================================');
 
     Memo1.Lines.Add('User: ' + User.Contract);
@@ -92,16 +93,19 @@ begin
     Memo1.Lines.Add('BrithDay: ' + Client.BrithDay);
     Memo1.Lines.Add('Age: ' + Client.Age.ToString);
     Memo1.Lines.Add('CPF: ' + Client.CPF);
+    Memo1.Lines.Add('Contract: ' + Client.Contract);
     Memo1.Lines.Add('==================================');
 
     Memo2.Lines.Add('==================================');
     Memo2.Lines.Add('============= Person =============');
     Memo2.Lines.Add(Person.ReturnDados);
+    Memo1.Lines.Add('Contract: ' + Client.Contract);
     Memo2.Lines.Add('==================================');
     Memo2.Lines.Add('==================================');
     Memo2.Lines.Add('============= Client =============');
     Memo2.Lines.Add('==================================');
     Memo2.Lines.Add(Client.ReturnDados);
+    Memo1.Lines.Add('Contract: ' + Client.Contract);
     Memo2.Lines.Add('==================================');
   finally
     Client.Free;
