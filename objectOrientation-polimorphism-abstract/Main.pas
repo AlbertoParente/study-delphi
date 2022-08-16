@@ -12,6 +12,8 @@ type
     Button1: TButton;
     Memo1: TMemo;
     Memo2: TMemo;
+    Memo4: TMemo;
+    Memo3: TMemo;
     procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
@@ -37,9 +39,11 @@ var
 begin
   Memo1.Clear;
   Memo2.Clear;
+  Memo3.Clear;
+  Memo4.Clear;
   Person := TPerson.Create;
   Client := TClient.Create;
-  User   := TUser.Create;
+  User := TUser.Create;
 
   try
     Client.Name := 'Alberto Parente';
@@ -99,7 +103,7 @@ begin
     Memo2.Lines.Add('==================================');
     Memo2.Lines.Add('============= Person =============');
     Memo2.Lines.Add(Person.ReturnDados);
-    Memo1.Lines.Add('Contract: ' + Client.Contract);
+    Memo2.Lines.Add('Contract: ' + Client.Contract);
     Memo2.Lines.Add('==================================');
     Memo2.Lines.Add('==================================');
     Memo2.Lines.Add('============= Client =============');
@@ -107,6 +111,30 @@ begin
     Memo2.Lines.Add(Client.ReturnDados);
     Memo1.Lines.Add('Contract: ' + Client.Contract);
     Memo2.Lines.Add('==================================');
+
+    Memo3.Lines.Add('==================================');
+    Memo3.Lines.Add('============= Person =============');
+    Memo3.Lines.Add(Person.ReturnDados);
+    Memo3.Lines.Add('Contract: ' + Client.Contract);
+    Memo3.Lines.Add('==================================');
+    Memo3.Lines.Add('==================================');
+    Memo3.Lines.Add('============= Client =============');
+    Memo3.Lines.Add('==================================');
+    Memo3.Lines.Add(Client.ReturnDados);
+    Memo3.Lines.Add('Contract: ' + Client.Contract);
+    Memo3.Lines.Add('==================================');
+
+    Memo4.Lines.Add('==================================');
+    Memo4.Lines.Add('============= Person =============');
+    Memo4.Lines.Add(Person.ReturnDados);
+    Memo4.Lines.Add('Contract: ' + Client.Contract);
+    Memo4.Lines.Add('==================================');
+    Memo4.Lines.Add('==================================');
+    Memo4.Lines.Add('============= Client =============');
+    Memo4.Lines.Add('==================================');
+    Memo4.Lines.Add(Client.ReturnDados);
+    Memo4.Lines.Add('Contract: ' + Client.Contract);
+    Memo4.Lines.Add('==================================');
   finally
     Client.Free;
     Person.Free;
