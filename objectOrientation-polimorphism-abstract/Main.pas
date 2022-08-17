@@ -57,6 +57,7 @@ begin
     Memo1.Lines.Add('Age: ' + Person.Age.ToString);
     Memo1.Lines.Add('==================================');
     Memo1.Lines.Add('==================================');
+    
     Memo1.Lines.Add('============= Client =============');
     Memo1.Lines.Add('==================================');
     Memo1.Lines.Add('Name: ' + Client.Name);
@@ -64,6 +65,7 @@ begin
     Memo1.Lines.Add('Age: ' + Client.Age.ToString);
     Memo1.Lines.Add('CPF: ' + Client.CPF);
     Memo1.Lines.Add('Contract: ' + Client.Contract);
+    Memo1.Lines.Add('Contract: ' + Person.Contract);
     Memo1.Lines.Add('==================================');
 
     Memo1.Lines.Add('==================================');
@@ -73,6 +75,7 @@ begin
     Memo1.Lines.Add('Age: ' + Person.Age.ToString);
     Memo1.Lines.Add('==================================');
     Memo1.Lines.Add('==================================');
+    
     Memo1.Lines.Add('============= Client =============');
     Memo1.Lines.Add('==================================');
     Memo1.Lines.Add('Name: ' + Client.Name);
@@ -80,6 +83,7 @@ begin
     Memo1.Lines.Add('Age: ' + Client.Age.ToString);
     Memo1.Lines.Add('CPF: ' + Client.CPF);
     Memo1.Lines.Add('Contract: ' + Client.Contract);
+    Memo1.Lines.Add('Contract: ' + Person.Contract);
     Memo1.Lines.Add('==================================');
 
     Memo1.Lines.Add('User: ' + User.Contract);
@@ -91,6 +95,7 @@ begin
     Memo1.Lines.Add('Age: ' + Person.Age.ToString);
     Memo1.Lines.Add('==================================');
     Memo1.Lines.Add('==================================');
+    
     Memo1.Lines.Add('============= Client =============');
     Memo1.Lines.Add('==================================');
     Memo1.Lines.Add('Name: ' + Client.Name);
@@ -98,42 +103,52 @@ begin
     Memo1.Lines.Add('Age: ' + Client.Age.ToString);
     Memo1.Lines.Add('CPF: ' + Client.CPF);
     Memo1.Lines.Add('Contract: ' + Client.Contract);
+    Memo1.Lines.Add('Contract: ' + Person.Contract);
     Memo1.Lines.Add('==================================');
 
     Memo2.Lines.Add('==================================');
     Memo2.Lines.Add('============= Person =============');
     Memo2.Lines.Add(Person.ReturnDados);
     Memo2.Lines.Add('Contract: ' + Client.Contract);
+    Memo2.Lines.Add('Contract: ' + Person.Contract);
     Memo2.Lines.Add('==================================');
     Memo2.Lines.Add('==================================');
+    
     Memo2.Lines.Add('============= Client =============');
     Memo2.Lines.Add('==================================');
     Memo2.Lines.Add(Client.ReturnDados);
-    Memo1.Lines.Add('Contract: ' + Client.Contract);
+    Memo2.Lines.Add('Contract: ' + Client.Contract);
+    Memo2.Lines.Add('Contract: ' + Person.Contract);
     Memo2.Lines.Add('==================================');
 
     Memo3.Lines.Add('==================================');
     Memo3.Lines.Add('============= Person =============');
     Memo3.Lines.Add(Person.ReturnDados);
     Memo3.Lines.Add('Contract: ' + Client.Contract);
+    Memo3.Lines.Add('Contract: ' + Person.Contract);
     Memo3.Lines.Add('==================================');
     Memo3.Lines.Add('==================================');
+    
     Memo3.Lines.Add('============= Client =============');
     Memo3.Lines.Add('==================================');
     Memo3.Lines.Add(Client.ReturnDados);
     Memo3.Lines.Add('Contract: ' + Client.Contract);
+    Memo3.Lines.Add('Contract: ' + Person.Contract);
     Memo3.Lines.Add('==================================');
 
     Memo4.Lines.Add('==================================');
     Memo4.Lines.Add('============= Person =============');
     Memo4.Lines.Add(Person.ReturnDados);
     Memo4.Lines.Add('Contract: ' + Client.Contract);
+    Memo4.Lines.Add('Contract: ' + Person.Contract);
     Memo4.Lines.Add('==================================');
     Memo4.Lines.Add('==================================');
+    
     Memo4.Lines.Add('============= Client =============');
     Memo4.Lines.Add('==================================');
     Memo4.Lines.Add(Client.ReturnDados);
     Memo4.Lines.Add('Contract: ' + Client.Contract);
+    Memo4.Lines.Add('Contract: ' + Person.Contract);
     Memo4.Lines.Add('==================================');
   finally
     Client.Free;
