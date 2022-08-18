@@ -49,19 +49,46 @@ begin
     Client.Name := 'Alberto Parente';
     Client.CPF := '12345678912';
     Client.BrithDay := '19/08/1992';
+    Client.Email := 'albertoparentefh@gmail.com';
+    Client.Sexo := 'Masculino';
 
     Memo1.Lines.Add('==================================');
     Memo1.Lines.Add('============= Person =============');
     Memo1.Lines.Add('Name: ' + Person.Name);
     Memo1.Lines.Add('BrithDay: ' + Person.BrithDay);
     Memo1.Lines.Add('Age: ' + Person.Age.ToString);
+    Memo1.Lines.Add('Email: ' + Person.Email);
+    Memo1.Lines.Add('Sexo: ' + Person.Sexo);
     Memo1.Lines.Add('==================================');
     Memo1.Lines.Add('==================================');
+    
     Memo1.Lines.Add('============= Client =============');
     Memo1.Lines.Add('==================================');
     Memo1.Lines.Add('Name: ' + Client.Name);
     Memo1.Lines.Add('BrithDay: ' + Client.BrithDay);
     Memo1.Lines.Add('Age: ' + Client.Age.ToString);
+    Memo1.Lines.Add('Email: ' + Person.Email);
+    Memo1.Lines.Add('Sexo: ' + Person.Sexo);
+    Memo1.Lines.Add('CPF: ' + Client.CPF);
+    Memo1.Lines.Add('==================================');
+
+    Memo1.Lines.Add('==================================');
+    Memo1.Lines.Add('============= Person =============');
+    Memo1.Lines.Add('Name: ' + Person.Name);
+    Memo1.Lines.Add('BrithDay: ' + Person.BrithDay);
+    Memo1.Lines.Add('Email: ' + Person.Email);
+    Memo1.Lines.Add('Sexo: ' + Person.Sexo);
+    Memo1.Lines.Add('Age: ' + Person.Age.ToString);
+    Memo1.Lines.Add('==================================');
+    Memo1.Lines.Add('==================================');
+    
+    Memo1.Lines.Add('============= Client =============');
+    Memo1.Lines.Add('==================================');
+    Memo1.Lines.Add('Name: ' + Client.Name);
+    Memo1.Lines.Add('BrithDay: ' + Client.BrithDay);
+    Memo1.Lines.Add('Age: ' + Client.Age.ToString);
+    Memo1.Lines.Add('Email: ' + Person.Email);
+    Memo1.Lines.Add('Sexo: ' + Person.Sexo);
     Memo1.Lines.Add('CPF: ' + Client.CPF);
     Memo1.Lines.Add('==================================');
 
@@ -70,28 +97,18 @@ begin
     Memo1.Lines.Add('Name: ' + Person.Name);
     Memo1.Lines.Add('BrithDay: ' + Person.BrithDay);
     Memo1.Lines.Add('Age: ' + Person.Age.ToString);
+    Memo1.Lines.Add('Email: ' + Person.Email);
+    Memo1.Lines.Add('Sexo: ' + Person.Sexo);
     Memo1.Lines.Add('==================================');
     Memo1.Lines.Add('==================================');
+    
     Memo1.Lines.Add('============= Client =============');
     Memo1.Lines.Add('==================================');
     Memo1.Lines.Add('Name: ' + Client.Name);
     Memo1.Lines.Add('BrithDay: ' + Client.BrithDay);
     Memo1.Lines.Add('Age: ' + Client.Age.ToString);
-    Memo1.Lines.Add('CPF: ' + Client.CPF);
-    Memo1.Lines.Add('==================================');
-
-    Memo1.Lines.Add('==================================');
-    Memo1.Lines.Add('============= Person =============');
-    Memo1.Lines.Add('Name: ' + Person.Name);
-    Memo1.Lines.Add('BrithDay: ' + Person.BrithDay);
-    Memo1.Lines.Add('Age: ' + Person.Age.ToString);
-    Memo1.Lines.Add('==================================');
-    Memo1.Lines.Add('==================================');
-    Memo1.Lines.Add('============= Client =============');
-    Memo1.Lines.Add('==================================');
-    Memo1.Lines.Add('Name: ' + Client.Name);
-    Memo1.Lines.Add('BrithDay: ' + Client.BrithDay);
-    Memo1.Lines.Add('Age: ' + Client.Age.ToString);
+    Memo1.Lines.Add('Email: ' + Person.Email);
+    Memo1.Lines.Add('Sexo: ' + Person.Sexo);
     Memo1.Lines.Add('CPF: ' + Client.CPF);
     Memo1.Lines.Add('==================================');
 
@@ -100,6 +117,7 @@ begin
     Memo2.Lines.Add(Person.ReturnDados);
     Memo2.Lines.Add('==================================');
     Memo2.Lines.Add('==================================');
+    
     Memo2.Lines.Add('============= Client =============');
     Memo2.Lines.Add('==================================');
     Memo2.Lines.Add(Client.ReturnDados);
@@ -110,6 +128,7 @@ begin
     Memo3.Lines.Add(Person.ReturnDados);
     Memo3.Lines.Add('==================================');
     Memo3.Lines.Add('==================================');
+    
     Memo3.Lines.Add('============= Client =============');
     Memo3.Lines.Add('==================================');
     Memo3.Lines.Add(Client.ReturnDados);
@@ -120,6 +139,7 @@ begin
     Memo4.Lines.Add(Person.ReturnDados);
     Memo4.Lines.Add('==================================');
     Memo4.Lines.Add('==================================');
+    
     Memo4.Lines.Add('============= Client =============');
     Memo4.Lines.Add('==================================');
     Memo4.Lines.Add(Client.ReturnDados);
