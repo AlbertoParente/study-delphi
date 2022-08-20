@@ -13,6 +13,8 @@ type
     Memo1: TMemo;
     Label1: TLabel;
     Memo2: TMemo;
+    Memo3: TMemo;
+    Memo4: TMemo;
     procedure Button1Click(Sender: TObject);
   private
     { Private declarations }

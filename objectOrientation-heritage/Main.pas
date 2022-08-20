@@ -10,6 +10,9 @@ type
   TForm4 = class(TForm)
     Button1: TButton;
     Memo1: TMemo;
+    Memo3: TMemo;
+    Memo4: TMemo;
+    Memo2: TMemo;
     procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
