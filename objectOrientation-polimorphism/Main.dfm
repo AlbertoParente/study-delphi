@@ -3,7 +3,7 @@ object Form5: TForm5
   Top = 0
   Caption = 'Form5'
   ClientHeight = 554
-  ClientWidth = 637
+  ClientWidth = 645
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -21,8 +21,8 @@ object Form5: TForm5
     Caption = 'Encapsulation Concept'
   end
   object Button1: TButton
-    Left = 557
-    Top = 512
+    Left = 293
+    Top = 256
     Width = 75
     Height = 33
     Caption = 'Button1'
@@ -37,7 +37,7 @@ object Form5: TForm5
     TabOrder = 1
   end
   object Memo2: TMemo
-    Left = 327
+    Left = 335
     Top = 27
     Width = 305
     Height = 223
@@ -45,14 +45,14 @@ object Form5: TForm5
   end
   object Memo3: TMemo
     Left = 8
-    Top = 256
+    Top = 295
     Width = 313
     Height = 250
     TabOrder = 3
   end
   object Memo4: TMemo
-    Left = 327
-    Top = 256
+    Left = 335
+    Top = 296
     Width = 305
     Height = 250
     TabOrder = 4

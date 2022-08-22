@@ -10,6 +10,10 @@ uses
 type
   TForm1 = class(TForm)
     Button1: TButton;
+    Memo1: TMemo;
+    Memo2: TMemo;
+    Memo3: TMemo;
+    Memo4: TMemo;
     procedure Button1Click(Sender: TObject);
   private
     { Private declarations }

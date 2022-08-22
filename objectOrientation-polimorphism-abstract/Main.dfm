@@ -14,8 +14,8 @@ object Form7: TForm7
   PixelsPerInch = 96
   TextHeight = 13
   object Button1: TButton
-    Left = 574
-    Top = 607
+    Left = 294
+    Top = 303
     Width = 75
     Height = 25
     Caption = 'Button1'
@@ -38,14 +38,14 @@ object Form7: TForm7
   end
   object Memo4: TMemo
     Left = 344
-    Top = 320
+    Top = 334
     Width = 305
     Height = 265
     TabOrder = 3
   end
   object Memo3: TMemo
     Left = 16
-    Top = 320
+    Top = 334
     Width = 305
     Height = 265
     TabOrder = 4

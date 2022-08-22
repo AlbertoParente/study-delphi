@@ -21,8 +21,8 @@ object Form6: TForm6
     Caption = ' concept of polimorphism-virtual-override'
   end
   object Button1: TButton
-    Left = 566
-    Top = 607
+    Left = 286
+    Top = 311
     Width = 75
     Height = 25
     Caption = 'Button1'
@@ -45,14 +45,14 @@ object Form6: TForm6
   end
   object Memo3: TMemo
     Left = 8
-    Top = 328
+    Top = 342
     Width = 305
     Height = 265
     TabOrder = 3
   end
   object Memo4: TMemo
     Left = 336
-    Top = 328
+    Top = 342
     Width = 305
     Height = 265
     TabOrder = 4
